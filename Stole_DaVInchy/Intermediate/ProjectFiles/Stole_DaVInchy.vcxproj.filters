@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Stole_DaVInchy.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F4272E58-B505-4755-99B0-536CFF76F030}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Stole_DaVInchy.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Stole_DaVInchyEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{56DF00E8-61D3-4C36-84B7-DF935F3C2365}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{4A2FC0CC-E807-465D-B85E-F50D59ACD698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Navigation3D">
+      <UniqueIdentifier>{B293C810-B8B8-48DD-864E-519F1BB7B5E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Navigation3D\Source">
+      <UniqueIdentifier>{3F10DC41-527F-4902-8842-DA118BE3D7F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Navigation3D\Source\Navigation3D">
+      <UniqueIdentifier>{2A6A61C8-F9BF-4792-AF2A-794D56613A3F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Navigation3D.Build.cs">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D</Filter>
+    </None>
+    <Filter Include="Plugins\Navigation3D\Source\Navigation3D\Private">
+      <UniqueIdentifier>{4578AD5C-614F-4B52-87E7-6DC79AC5103E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Private\Navigation3D.cpp">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Private\NavigationVolume3D.cpp">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Private\NavNode.cpp">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Private\NavNode.h">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D\Private</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Navigation3D\Source\Navigation3D\Public">
+      <UniqueIdentifier>{DE209B4A-9466-4AA9-BFB3-CCDD8D38C697}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Public\Navigation3D.h">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Navigation3D\Source\Navigation3D\Public\NavigationVolume3D.h">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\Navigation3D\Config">
+      <UniqueIdentifier>{93C234F1-2BB7-41CA-A845-FB6A82A15127}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Navigation3D\Config\FilterPlugin.ini">
+      <Filter>Plugins\Navigation3D\Config</Filter>
+    </None>
+    <Filter Include="Plugins\Navigation3D\Resources">
+      <UniqueIdentifier>{3C4E5701-05B0-4A8A-9643-635E6FE6A1E8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Navigation3D\Resources\Icon128.png">
+      <Filter>Plugins\Navigation3D\Resources</Filter>
+    </None>
+    <Filter Include="Source\Stole_DaVInchy">
+      <UniqueIdentifier>{F5FC4583-FB2F-4E30-9E24-DEECEEC3B2E6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Stole_DaVInchy\MyClass.cpp">
+      <Filter>Source\Stole_DaVInchy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Stole_DaVInchy\MyClass.h">
+      <Filter>Source\Stole_DaVInchy</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Stole_DaVInchy\Stole_DaVInchy.Build.cs">
+      <Filter>Source\Stole_DaVInchy</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Stole_DaVInchy\Stole_DaVInchy.cpp">
+      <Filter>Source\Stole_DaVInchy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Stole_DaVInchy\Stole_DaVInchy.h">
+      <Filter>Source\Stole_DaVInchy</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\Navigation3D\Navigation3D.uplugin">
+      <Filter>Plugins\Navigation3D\Source\Navigation3D</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Stole_DaVInchy",
+			"Path": "E:\\ASD\\FlyProject\\Stole_DaVInchy\\Source\\Stole_DaVInchy.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Stole_DaVInchyEditor",
+			"Path": "E:\\ASD\\FlyProject\\Stole_DaVInchy\\Source\\Stole_DaVInchyEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
