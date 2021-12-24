@@ -71,7 +71,8 @@ public:
 
 	// Finds a path from the starting location to the destination
 	UFUNCTION(BlueprintCallable, Category = "NavigationVolume3D")
-	bool FindPath(const FVector& start, const FVector& destination, const TArray<TEnumAsByte<EObjectTypeQuery> >& object_types, UClass* actor_class_filter, TArray<FVector>& out_path);
+	bool FindPath(const FVector& start, const FVector& destination, const TArray<TEnumAsByte<EObjectTypeQuery> >& object_types,
+		UClass* actor_class_filter, TArray<FVector>& out_path, int Normalaze_Grid, int Normalaze_Grid_End);
 
 	/**
 	* Converts a world space location to a coordinate in the grid. If the location is not located within the grid,

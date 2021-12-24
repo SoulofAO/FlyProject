@@ -73,3 +73,6 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+Stole_DaVInchy/Saved/Logs/Stole_DaVInchy.log
+Stole_DaVInchy/Saved/Logs/Stole_DaVInchy.log
+*.log

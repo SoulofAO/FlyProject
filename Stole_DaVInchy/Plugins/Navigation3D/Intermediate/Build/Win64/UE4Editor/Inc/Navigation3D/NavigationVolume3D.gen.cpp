@@ -84,9 +84,11 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 		P_GET_TARRAY_REF(TEnumAsByte<EObjectTypeQuery>,Z_Param_Out_object_types);
 		P_GET_OBJECT(UClass,Z_Param_actor_class_filter);
 		P_GET_TARRAY_REF(FVector,Z_Param_Out_out_path);
+		P_GET_PROPERTY(FIntProperty,Z_Param_Normalaze_Grid);
+		P_GET_PROPERTY(FIntProperty,Z_Param_Normalaze_Grid_End);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->FindPath(Z_Param_Out_start,Z_Param_Out_destination,Z_Param_Out_object_types,Z_Param_actor_class_filter,Z_Param_Out_out_path);
+		*(bool*)Z_Param__Result=P_THIS->FindPath(Z_Param_Out_start,Z_Param_Out_destination,Z_Param_Out_object_types,Z_Param_actor_class_filter,Z_Param_Out_out_path,Z_Param_Normalaze_Grid,Z_Param_Normalaze_Grid_End);
 		P_NATIVE_END;
 	}
 	void ANavigationVolume3D::StaticRegisterNativesANavigationVolume3D()
@@ -223,6 +225,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 			TArray<TEnumAsByte<EObjectTypeQuery> > object_types;
 			UClass* actor_class_filter;
 			TArray<FVector> out_path;
+			int32 Normalaze_Grid;
+			int32 Normalaze_Grid_End;
 			bool ReturnValue;
 		};
 #if WITH_METADATA
@@ -241,6 +245,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_actor_class_filter;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_path_Inner;
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_path;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Normalaze_Grid;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Normalaze_Grid_End;
 		static void NewProp_ReturnValue_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -271,6 +277,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_actor_class_filter = { "actor_class_filter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NavigationVolume3D_eventFindPath_Parms, actor_class_filter), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_out_path_Inner = { "out_path", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_out_path = { "out_path", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NavigationVolume3D_eventFindPath_Parms, out_path), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_Normalaze_Grid = { "Normalaze_Grid", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NavigationVolume3D_eventFindPath_Parms, Normalaze_Grid), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_Normalaze_Grid_End = { "Normalaze_Grid_End", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NavigationVolume3D_eventFindPath_Parms, Normalaze_Grid_End), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((NavigationVolume3D_eventFindPath_Parms*)Obj)->ReturnValue = 1;
@@ -284,6 +292,8 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_actor_class_filter,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_out_path_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_out_path,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_Normalaze_Grid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_Normalaze_Grid_End,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANavigationVolume3D_FindPath_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
@@ -537,7 +547,7 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ANavigationVolume3D_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ANavigationVolume3D_ConvertCoordinatesToLocation, "ConvertCoordinatesToLocation" }, // 984459845
 		{ &Z_Construct_UFunction_ANavigationVolume3D_ConvertLocationToCoordinates, "ConvertLocationToCoordinates" }, // 1373127150
-		{ &Z_Construct_UFunction_ANavigationVolume3D_FindPath, "FindPath" }, // 958751187
+		{ &Z_Construct_UFunction_ANavigationVolume3D_FindPath, "FindPath" }, // 1682123077
 		{ &Z_Construct_UFunction_ANavigationVolume3D_GetDivisionSize, "GetDivisionSize" }, // 2619330113
 		{ &Z_Construct_UFunction_ANavigationVolume3D_GetDivisionsX, "GetDivisionsX" }, // 2109150304
 		{ &Z_Construct_UFunction_ANavigationVolume3D_GetDivisionsY, "GetDivisionsY" }, // 2851789380
@@ -687,7 +697,7 @@ void EmptyLinkFunctionForGeneratedCodeNavigationVolume3D() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANavigationVolume3D, 1883337403);
+	IMPLEMENT_CLASS(ANavigationVolume3D, 1777797556);
 	template<> NAVIGATION3D_API UClass* StaticClass<ANavigationVolume3D>()
 	{
 		return ANavigationVolume3D::StaticClass();

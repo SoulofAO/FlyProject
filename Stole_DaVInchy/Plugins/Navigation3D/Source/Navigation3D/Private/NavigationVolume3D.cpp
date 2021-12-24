@@ -241,87 +241,157 @@ void ANavigationVolume3D::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-bool ANavigationVolume3D::FindPath(const FVector& start, const FVector& destination, const TArray<TEnumAsByte<EObjectTypeQuery> >& object_types, UClass* actor_class_filter, TArray<FVector>& out_path)
+
+bool GetNearestNode (TArray<FIntVector> &Array, FIntVector Coords, int Grid_Normalaize, int count)
+{
+	if (Grid_Normalaize > count) {
+		const TArray<FIntVector> offsets;
+		
+
+
+		int countself;
+		FIntVector Coords0 = { Coords.X + 1,Coords.Y,Coords.Z };
+		if (!(Array.Contains(Coords0))) {
+			Array.Add(Coords0);
+			GetNearestNode(Array, Coords, Grid_Normalaize, count+1);
+		}
+
+		FIntVector Coords1 = { Coords.X,Coords.Y+1,Coords.Z };
+		if (!(Array.Contains(Coords1))) {
+			Array.Add(Coords1);
+			GetNearestNode(Array, Coords, Grid_Normalaize, count+1);
+		}
+
+		FIntVector Coords2 = { Coords.X,Coords.Y,Coords.Z+1 };
+		if (!(Array.Contains(Coords2))) {
+			Array.Add(Coords2);
+			GetNearestNode(Array, Coords2, Grid_Normalaize, count+1);
+		}
+		FIntVector Coords3 = { Coords.X,Coords.Y,Coords.Z-1 };
+		if (!(Array.Contains(Coords3))) {
+			Array.Add(Coords3);
+			GetNearestNode(Array, Coords3, Grid_Normalaize, count+1);
+		}
+
+		Coords2 = { Coords.X,Coords.Y-1,Coords.Z };
+		if (!(Array.Contains(Coords2))) {
+			Array.Add(Coords2);
+			countself = count+1;
+			GetNearestNode(Array, Coords2, Grid_Normalaize, count+1);
+		}
+		Coords2 = { Coords.X-1,Coords.Y,Coords.Z };
+		if (!(Array.Contains(Coords2))) {
+			Array.Add(Coords2);
+		    countself = count+1;
+			GetNearestNode(Array, Coords2, Grid_Normalaize, count+1);
+		}
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+bool ANavigationVolume3D::FindPath(const FVector& start, const FVector& destination, const TArray<TEnumAsByte<EObjectTypeQuery> >& object_types, UClass* actor_class_filter, TArray<FVector>& out_path,int Normalaze_Grid_Start, int Normalaze_Grid_End)
 {
 	// Clear the out path
-	out_path.Empty();
+	FIntVector CoordsStart = ConvertLocationToCoordinates(start);	
+	FIntVector CoordsEnd = ConvertLocationToCoordinates(destination);
 
-	std::multiset<NavNode*, NodeCompare> openSet;
-	std::unordered_map<NavNode*, NavNode*> cameFrom;
-	std::unordered_map<NavNode*, float> gScores;
 
-	NavNode* startNode = GetNode(ConvertLocationToCoordinates(start));
-	NavNode* endNode = GetNode(ConvertLocationToCoordinates(destination));
-
-	auto h = [endNode](NavNode* node)
-	{
-		return FVector::Distance(FVector(endNode->Coordinates), FVector(node->Coordinates));
-	};
-	auto distance = [](NavNode* node1, NavNode* node2)
-	{
-		return FVector::Distance(FVector(node1->Coordinates), FVector(node2->Coordinates));
-	};
-	auto gScore = [&gScores](NavNode* node)
-	{
-		auto iter = gScores.find(node);
-		if (iter != gScores.end())
-			return iter->second;
-		return FLT_MAX;
-	};
-
-	startNode->FScore = h(startNode);
-	openSet.insert(startNode);
-	gScores[startNode] = 0.0f;
-
-	while (openSet.empty() == false)
-	{
-		NavNode* current = *openSet.begin();
-
-		if (current == endNode)
+		TArray<FIntVector> StartArray;
+		TArray<FIntVector> EndArray;
+		StartArray.Add(CoordsStart);
+		EndArray.Add(CoordsEnd);
+		GetNearestNode(StartArray, CoordsStart, Normalaze_Grid_Start, 0);
+		GetNearestNode(EndArray, CoordsEnd, Normalaze_Grid_End, 0);
+		for (int z = 0; z <= (StartArray.Num() - 1); z++)
 		{
-			// Rebuild the path
-			out_path.Add(ConvertCoordinatesToLocation(current->Coordinates));
-
-			while (true)
+			FIntVector StartCoord = StartArray[z];
+			for (int z1 = 0; z1 <= (EndArray.Num() - 1); z1++)
 			{
-				auto iter = cameFrom.find(current);
-				if (iter != cameFrom.end())
+				out_path.Empty();
+
+				std::multiset<NavNode*, NodeCompare> openSet;
+				std::unordered_map<NavNode*, NavNode*> cameFrom;
+				std::unordered_map<NavNode*, float> gScores;
+				FIntVector EndCoord = EndArray[z1];
+
+				NavNode* startNode = GetNode(StartCoord);
+				NavNode* endNode = GetNode(EndCoord);
+
+
+
+				auto h = [endNode](NavNode* node)
 				{
-					current = iter->second;
-					out_path.Insert(ConvertCoordinatesToLocation(current->Coordinates), 0);
-				}
-				else
+					return FVector::Distance(FVector(endNode->Coordinates), FVector(node->Coordinates));
+				};
+				auto distance = [](NavNode* node1, NavNode* node2)
 				{
-					return true;
+					return FVector::Distance(FVector(node1->Coordinates), FVector(node2->Coordinates));
+				};
+				auto gScore = [&gScores](NavNode* node)
+				{
+					auto iter = gScores.find(node);
+					if (iter != gScores.end())
+						return iter->second;
+					return FLT_MAX;
+				};
+
+				startNode->FScore = h(startNode);
+				openSet.insert(startNode);
+				gScores[startNode] = 0.0f;
+
+				while (openSet.empty() == false)
+				{
+					NavNode* current = *openSet.begin();
+
+					if (current == endNode)
+					{
+						// Rebuild the path
+						out_path.Add(ConvertCoordinatesToLocation(current->Coordinates));
+
+						while (true)
+						{
+							auto iter = cameFrom.find(current);
+							if (iter != cameFrom.end())
+							{
+								current = iter->second;
+								out_path.Insert(ConvertCoordinatesToLocation(current->Coordinates), 0);
+							}
+							else
+							{
+								return true;
+							}
+						}
+					}
+
+					openSet.erase(openSet.begin());
+
+					for (NavNode* neighbor : current->Neighbors)
+					{
+						const float tentative_gScore = gScore(current) + distance(current, neighbor);
+
+						if (tentative_gScore < gScore(neighbor))
+						{
+							TArray<AActor*> outActors;
+							const FVector worldLocation = ConvertCoordinatesToLocation(neighbor->Coordinates);
+							bool traversable = !(UKismetSystemLibrary::BoxOverlapActors(GWorld, worldLocation, FVector(GetDivisionSize() / 2.0f), object_types, actor_class_filter, TArray<AActor*>(), outActors));
+							if (traversable == true)
+							{
+								cameFrom[neighbor] = current;
+								gScores[neighbor] = tentative_gScore;
+								const float fScore = tentative_gScore + h(neighbor);
+								neighbor->FScore = fScore;
+								openSet.insert(neighbor);
+							}
+						}
+					}
 				}
 			}
 		}
-
-		openSet.erase(openSet.begin());
-
-		for (NavNode* neighbor : current->Neighbors)
-		{
-			const float tentative_gScore = gScore(current) + distance(current, neighbor);
-
-			if (tentative_gScore < gScore(neighbor))
-			{
-				TArray<AActor*> outActors;
-				const FVector worldLocation = ConvertCoordinatesToLocation(neighbor->Coordinates);
-				bool traversable = !(UKismetSystemLibrary::BoxOverlapActors(GWorld, worldLocation, FVector(GetDivisionSize() / 2.0f), object_types, actor_class_filter, TArray<AActor*>(), outActors));
-				if (traversable == true)
-				{
-					cameFrom[neighbor] = current;
-					gScores[neighbor] = tentative_gScore;
-					const float fScore = tentative_gScore + h(neighbor);
-					neighbor->FScore = fScore;
-					openSet.insert(neighbor);
-				}
-			}
-		}
-	}
-
-	// Failed to find path
-	return false;
+		// Failed to find path
+		return false;	
 }
 
 FIntVector ANavigationVolume3D::ConvertLocationToCoordinates(const FVector& location)
