@@ -28,6 +28,14 @@
 			"Type": "Executable"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor-GetMeshVertex.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor-GetMeshVertex.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/Navigation3D/Binaries/Win64/UE4Editor-Navigation3D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2396,6 +2404,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/Navigation3D/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2903,6 +2915,10 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/Stole_DaVInchy.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/GetMeshVertex.uplugin",
 			"Type": "UFS"
 		},
 		{
