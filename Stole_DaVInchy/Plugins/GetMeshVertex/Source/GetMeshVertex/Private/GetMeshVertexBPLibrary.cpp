@@ -36,3 +36,29 @@ int32 UGetMeshVertexBPLibrary::GetVertexCount(UStaticMeshComponent* StaticMeshCo
 
     return 0;
 }
+
+TArray<FVector> UGetMeshVertexBPLibrary::Normalize_Vector_MeshVertex(TArray<FVector> StaticMeshArrayVertex)
+{
+    TArray<FVector> ArrayAnswer;
+    for (const auto x : StaticMeshArrayVertex) 
+    {
+        bool SucsessFind = 0;
+        for (const auto y : ArrayAnswer)
+        {
+            if (x == y) 
+            {
+                SucsessFind = 1;
+                break;
+            }
+            else 
+            {
+                
+            }
+        }
+        if (!SucsessFind)
+        {
+            ArrayAnswer.Add(x);
+        }
+    }
+    return ArrayAnswer;
+}

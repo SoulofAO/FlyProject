@@ -31,4 +31,7 @@ class UGetMeshVertexBPLibrary : public UBlueprintFunctionLibrary
 		static FVector GetVertexLocaltion(int Count, UStaticMeshComponent* StaticMeshComponent);
 	    UFUNCTION(BlueprintCallable, meta = (DisplayName = "GetMeshVertexCount", Keywords = "GetMeshVertexCount"), Category = "GetMeshVertexTesting")
 		static int32 GetVertexCount(UStaticMeshComponent* StaticMeshComponent);
+		UFUNCTION(BlueprintCallable, meta = (DisplayName = "Normalize_Vector_Array", Keywords = "Normalize_Vector_Array"), Category = "GetMeshVertexTesting")
+		static TArray<FVector> Normalize_Vector_MeshVertex(TArray<FVector> StaticMeshArrayVertex);
+
 };

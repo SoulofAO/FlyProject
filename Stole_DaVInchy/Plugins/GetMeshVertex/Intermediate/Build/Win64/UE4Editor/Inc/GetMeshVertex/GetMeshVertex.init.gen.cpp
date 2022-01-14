@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeGetMeshVertex_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xD9328278,
+				0xB43C689E,
 				0xCDB9C1E3,
 				METADATA_PARAMS(nullptr, 0)
 			};

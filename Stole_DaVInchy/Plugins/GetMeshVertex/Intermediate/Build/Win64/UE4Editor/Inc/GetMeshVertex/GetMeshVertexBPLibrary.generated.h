@@ -8,8 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UStaticMeshComponent;
 struct FVector;
+class UStaticMeshComponent;
 #ifdef GETMESHVERTEX_GetMeshVertexBPLibrary_generated_h
 #error "GetMeshVertexBPLibrary.generated.h already included, missing '#pragma once' in GetMeshVertexBPLibrary.h"
 #endif
@@ -18,12 +18,14 @@ struct FVector;
 #define Stole_DaVInchy_Plugins_GetMeshVertex_Source_GetMeshVertex_Public_GetMeshVertexBPLibrary_h_28_SPARSE_DATA
 #define Stole_DaVInchy_Plugins_GetMeshVertex_Source_GetMeshVertex_Public_GetMeshVertexBPLibrary_h_28_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execNormalize_Vector_MeshVertex); \
 	DECLARE_FUNCTION(execGetVertexCount); \
 	DECLARE_FUNCTION(execGetVertexLocaltion);
 
 
 #define Stole_DaVInchy_Plugins_GetMeshVertex_Source_GetMeshVertex_Public_GetMeshVertexBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execNormalize_Vector_MeshVertex); \
 	DECLARE_FUNCTION(execGetVertexCount); \
 	DECLARE_FUNCTION(execGetVertexLocaltion);
 

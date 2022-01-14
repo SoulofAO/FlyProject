@@ -20,6 +20,14 @@ void EmptyLinkFunctionForGeneratedCodeGetMeshVertexBPLibrary() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
+	DEFINE_FUNCTION(UGetMeshVertexBPLibrary::execNormalize_Vector_MeshVertex)
+	{
+		P_GET_TARRAY(FVector,Z_Param_StaticMeshArrayVertex);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<FVector>*)Z_Param__Result=UGetMeshVertexBPLibrary::Normalize_Vector_MeshVertex(Z_Param_StaticMeshArrayVertex);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UGetMeshVertexBPLibrary::execGetVertexCount)
 	{
 		P_GET_OBJECT(UStaticMeshComponent,Z_Param_StaticMeshComponent);
@@ -43,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeGetMeshVertexBPLibrary() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetVertexCount", &UGetMeshVertexBPLibrary::execGetVertexCount },
 			{ "GetVertexLocaltion", &UGetMeshVertexBPLibrary::execGetVertexLocaltion },
+			{ "Normalize_Vector_MeshVertex", &UGetMeshVertexBPLibrary::execNormalize_Vector_MeshVertex },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -144,6 +153,51 @@ void EmptyLinkFunctionForGeneratedCodeGetMeshVertexBPLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics
+	{
+		struct GetMeshVertexBPLibrary_eventNormalize_Vector_MeshVertex_Parms
+		{
+			TArray<FVector> StaticMeshArrayVertex;
+			TArray<FVector> ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_StaticMeshArrayVertex_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_StaticMeshArrayVertex;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_StaticMeshArrayVertex_Inner = { "StaticMeshArrayVertex", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_StaticMeshArrayVertex = { "StaticMeshArrayVertex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetMeshVertexBPLibrary_eventNormalize_Vector_MeshVertex_Parms, StaticMeshArrayVertex), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetMeshVertexBPLibrary_eventNormalize_Vector_MeshVertex_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_StaticMeshArrayVertex_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_StaticMeshArrayVertex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_ReturnValue_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::Function_MetaDataParams[] = {
+		{ "Category", "GetMeshVertexTesting" },
+		{ "DisplayName", "Normalize_Vector_Array" },
+		{ "Keywords", "Normalize_Vector_Array" },
+		{ "ModuleRelativePath", "Public/GetMeshVertexBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGetMeshVertexBPLibrary, nullptr, "Normalize_Vector_MeshVertex", nullptr, nullptr, sizeof(GetMeshVertexBPLibrary_eventNormalize_Vector_MeshVertex_Parms), Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UGetMeshVertexBPLibrary_NoRegister()
 	{
 		return UGetMeshVertexBPLibrary::StaticClass();
@@ -165,6 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeGetMeshVertexBPLibrary() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGetMeshVertexBPLibrary_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UGetMeshVertexBPLibrary_GetVertexCount, "GetVertexCount" }, // 1503149892
 		{ &Z_Construct_UFunction_UGetMeshVertexBPLibrary_GetVertexLocaltion, "GetVertexLocaltion" }, // 3201470274
+		{ &Z_Construct_UFunction_UGetMeshVertexBPLibrary_Normalize_Vector_MeshVertex, "Normalize_Vector_MeshVertex" }, // 649905930
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGetMeshVertexBPLibrary_Statics::Class_MetaDataParams[] = {
@@ -201,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeGetMeshVertexBPLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGetMeshVertexBPLibrary, 996578364);
+	IMPLEMENT_CLASS(UGetMeshVertexBPLibrary, 1068242536);
 	template<> GETMESHVERTEX_API UClass* StaticClass<UGetMeshVertexBPLibrary>()
 	{
 		return UGetMeshVertexBPLibrary::StaticClass();
