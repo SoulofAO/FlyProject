@@ -62,3 +62,16 @@ TArray<FVector> UGetMeshVertexBPLibrary::Normalize_Vector_MeshVertex(TArray<FVec
     }
     return ArrayAnswer;
 }
+
+FColor UGetMeshVertexBPLibrary::GetVertexColor(int Count, UStaticMeshComponent* StaticMeshComponent)
+{
+    if (StaticMeshComponent->GetStaticMesh()->RenderData->LODResources.Num() > 0)
+    {
+        FColorVertexBuffer* VertexBuffer = &StaticMeshComponent->GetStaticMesh()->RenderData->LODResources[0].VertexBuffers.ColorVertexBuffer;
+        if (VertexBuffer)
+        {
+            return VertexBuffer->VertexColor(Count);
+        }
+    }
+    return { 0,0,0 };
+}

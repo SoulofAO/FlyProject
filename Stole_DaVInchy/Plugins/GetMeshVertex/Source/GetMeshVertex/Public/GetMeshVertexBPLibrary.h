@@ -33,5 +33,7 @@ class UGetMeshVertexBPLibrary : public UBlueprintFunctionLibrary
 		static int32 GetVertexCount(UStaticMeshComponent* StaticMeshComponent);
 		UFUNCTION(BlueprintCallable, meta = (DisplayName = "Normalize_Vector_Array", Keywords = "Normalize_Vector_Array"), Category = "GetMeshVertexTesting")
 		static TArray<FVector> Normalize_Vector_MeshVertex(TArray<FVector> StaticMeshArrayVertex);
+		UFUNCTION(BlueprintCallable, meta = (DisplayName = "GetVertexColor", Keywords = "GetVertexColor"), Category = "GetMeshVertexTesting")
+		static FColor GetVertexColor(int Count, UStaticMeshComponent* StaticMeshComponent);
 
 };

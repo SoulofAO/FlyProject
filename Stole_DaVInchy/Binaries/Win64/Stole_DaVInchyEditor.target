@@ -28,6 +28,10 @@
 			"Type": "Executable"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/ActorPalette/Binaries/Win64/UE4Editor-ActorPalette.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor-GetMeshVertex.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2404,6 +2408,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/ActorPalette/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2915,6 +2923,10 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/Stole_DaVInchy.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/ActorPalette/ActorPalette.uplugin",
 			"Type": "UFS"
 		},
 		{
