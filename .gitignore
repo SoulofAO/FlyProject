@@ -76,10 +76,10 @@ DerivedDataCache/*
 Stole_DaVInchy/Saved/Logs/Stole_DaVInchy.log
 Stole_DaVInchy/Saved/Logs/Stole_DaVInchy.log
 *.log
-Stole_DaVInchy/Saved/*
-Stole_DaVInchy/Intermediate/*
-Stole_DaVInchy/DerivedDataCache/*
-Stole_DaVInchy/Build/*
-Stole_DaVInchy/Binaries/*
-Stole_DaVInchy/.vs/*
+Stole_DaVInchy/Saved/
+Stole_DaVInchy/Intermediate/
+Stole_DaVInchy/DerivedDataCache/
+Stole_DaVInchy/Build/
+Stole_DaVInchy/Binaries/
+Stole_DaVInchy/.vs/
 
