@@ -32,6 +32,14 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/Binaries/Win64/UE4Editor-AI_Helper_plugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/Binaries/Win64/UE4Editor-AI_Helper_plugin.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor-GetMeshVertex.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2412,6 +2420,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2927,6 +2939,10 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Experimental/ActorPalette/ActorPalette.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/AI_Helper_plugin.uplugin",
 			"Type": "UFS"
 		},
 		{
