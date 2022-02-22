@@ -1,10 +1,11 @@
 {
 	"SourceFiles": [
-		"F:\\FlyProject_2\\Source\\Stole_DaVInchy\\Stole_DaVInchy.Build.cs",
-		"F:\\FlyProject_2\\Plugins\\GetMeshVertex\\Source\\GetMeshVertex\\GetMeshVertex.Build.cs",
-		"F:\\FlyProject_2\\Plugins\\Navigation3D\\Source\\Navigation3D\\Navigation3D.Build.cs",
-		"F:\\FlyProject_2\\Source\\Stole_DaVInchy.Target.cs",
-		"F:\\FlyProject_2\\Source\\Stole_DaVInchyEditor.Target.cs"
+		"F:\\MainProject\\FlyProject_End\\Stole_DaVInchy\\Source\\Stole_DaVInchy\\Stole_DaVInchy.Build.cs",
+		"F:\\MainProject\\FlyProject_End\\Stole_DaVInchy\\Plugins\\AI_Helper_plugin\\Source\\AI_Helper_plugin\\AI_Helper_plugin.Build.cs",
+		"F:\\MainProject\\FlyProject_End\\Stole_DaVInchy\\Plugins\\GetMeshVertex\\Source\\GetMeshVertex\\GetMeshVertex.Build.cs",
+		"F:\\MainProject\\FlyProject_End\\Stole_DaVInchy\\Plugins\\Navigation3D\\Source\\Navigation3D\\Navigation3D.Build.cs",
+		"F:\\MainProject\\FlyProject_End\\Stole_DaVInchy\\Source\\Stole_DaVInchy.Target.cs",
+		"F:\\MainProject\\FlyProject_End\\Stole_DaVInchy\\Source\\Stole_DaVInchyEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }

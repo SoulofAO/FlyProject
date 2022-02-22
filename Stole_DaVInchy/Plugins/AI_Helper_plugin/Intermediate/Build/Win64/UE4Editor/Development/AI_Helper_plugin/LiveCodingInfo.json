@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AI_Helper_plugin.cpp.obj": [
+			"AI_Helper_plugin.cpp.obj",
+			"AI_Helper_pluginBPLibrary.cpp.obj"
+		],
+		"Module.AI_Helper_plugin.gen.cpp.obj": [
+			"AI_Helper_plugin.init.gen.cpp.obj",
+			"AI_Helper_pluginBPLibrary.gen.cpp.obj"
+		]
+	}
+}

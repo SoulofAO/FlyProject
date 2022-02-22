@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Navigation3D-0002.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Intermediate\Build\Win64\Stole_DaVInchyEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Navigation3D\Intermediate\Build\Win64\UE4Editor\Development\Navigation3D\Module.Navigation3D.cpp.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Navigation3D\Intermediate\Build\Win64\UE4Editor\Development\Navigation3D\Module.Navigation3D.gen.cpp.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Navigation3D\Intermediate\Build\Win64\UE4Editor\Development\Navigation3D\Default.rc2.res"
+/OUT:"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Navigation3D\Intermediate\Build\Win64\UE4Editor\Development\Navigation3D\UE4Editor-Navigation3D-0002.lib"
