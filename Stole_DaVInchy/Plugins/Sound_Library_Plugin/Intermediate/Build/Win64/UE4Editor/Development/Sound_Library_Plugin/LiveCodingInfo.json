@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Sound_Library_Plugin.cpp.obj": [
+			"Sound_Library_Plugin.cpp.obj",
+			"Sound_Library_PluginBPLibrary.cpp.obj"
+		],
+		"Module.Sound_Library_Plugin.gen.cpp.obj": [
+			"Sound_Library_Plugin.init.gen.cpp.obj",
+			"Sound_Library_PluginBPLibrary.gen.cpp.obj"
+		]
+	}
+}

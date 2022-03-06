@@ -3,11 +3,13 @@
 	{
 		"Module.AI_Helper_plugin.cpp.obj": [
 			"AI_Helper_plugin.cpp.obj",
-			"AI_Helper_pluginBPLibrary.cpp.obj"
+			"AI_Helper_pluginBPLibrary.cpp.obj",
+			"Test_Distanse_Without_Normalaize.cpp.obj"
 		],
 		"Module.AI_Helper_plugin.gen.cpp.obj": [
 			"AI_Helper_plugin.init.gen.cpp.obj",
-			"AI_Helper_pluginBPLibrary.gen.cpp.obj"
+			"AI_Helper_pluginBPLibrary.gen.cpp.obj",
+			"Test_Distanse_Without_Normalaize.gen.cpp.obj"
 		]
 	}
 }
