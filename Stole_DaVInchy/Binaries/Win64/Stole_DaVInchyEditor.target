@@ -72,6 +72,14 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Vehile_Movement_Ubgrade/Binaries/Win64/UE4Editor-Vehile_Movement_Ubgrade.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Vehile_Movement_Ubgrade/Binaries/Win64/UE4Editor-Vehile_Movement_Ubgrade.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2448,6 +2456,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Vehile_Movement_Ubgrade/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2958,6 +2970,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Battle_Manager/Battle_Manager.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/GetMeshVertex.uplugin",
 			"Type": "UFS"
 		},
@@ -2971,6 +2987,10 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/Sound_Library_Plugin/Sound_Library_Plugin.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Vehile_Movement_Ubgrade/Vehile_Movement_Ubgrade.uplugin",
 			"Type": "UFS"
 		},
 		{
