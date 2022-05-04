@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Vehile_Movement_Ubgrade.cpp.obj": [
+			"Vehile_Movement_Ubgrade.cpp.obj",
+			"Vehile_Movement_UbgradeBPLibrary.cpp.obj"
+		],
+		"Module.Vehile_Movement_Ubgrade.gen.cpp.obj": [
+			"Vehile_Movement_Ubgrade.init.gen.cpp.obj",
+			"Vehile_Movement_UbgradeBPLibrary.gen.cpp.obj"
+		]
+	}
+}
