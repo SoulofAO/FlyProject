@@ -2,6 +2,6 @@
 	"BuildId": "17155196",
 	"Modules": 
 	{
-		"GetMeshVertex": "UE4Editor-GetMeshVertex-0004.dll"
+		"GetMeshVertex": "UE4Editor-GetMeshVertex.dll"
 	}
 }
