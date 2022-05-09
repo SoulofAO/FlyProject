@@ -1,0 +1,7 @@
+F:\PluginsCreator\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Definitions.Math.h
+F:/PluginsCreator/Plugins/Math/Intermediate/Build/Win64/UE4Editor/Inc/Math/Math.init.gen.cpp
+E:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+E:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+F:/PluginsCreator/Plugins/Math/Intermediate/Build/Win64/UE4Editor/Inc/Math/MathBPLibrary.gen.cpp
+F:\PluginsCreator\Plugins\Math\Source\Math/Public/MathBPLibrary.h
+F:\PluginsCreator\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Inc\Math\MathBPLibrary.generated.h
