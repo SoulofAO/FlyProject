@@ -13,20 +13,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MATH_MathBPLibrary_generated_h
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_SPARSE_DATA
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_SPARSE_DATA
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execMathAtanInDegrees); \
 	DECLARE_FUNCTION(execMathAtan);
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execMathAtanInDegrees); \
 	DECLARE_FUNCTION(execMathAtan);
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS_NO_PURE_DECLS \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMathBPLibrary(); \
 	friend struct Z_Construct_UClass_UMathBPLibrary_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(UMathBPLibrary)
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS \
 private: \
 	static void StaticRegisterNativesUMathBPLibrary(); \
 	friend struct Z_Construct_UClass_UMathBPLibrary_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(UMathBPLibrary)
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_STANDARD_CONSTRUCTORS \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMathBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMathBPLibrary) \
@@ -57,7 +57,7 @@ private: \
 public:
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_ENHANCED_CONSTRUCTORS \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMathBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -70,28 +70,28 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMathBPLibrary)
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_PRIVATE_PROPERTY_OFFSET
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_25_PROLOG
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_GENERATED_BODY_LEGACY \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_PRIVATE_PROPERTY_OFFSET
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_25_PROLOG
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_PRIVATE_PROPERTY_OFFSET \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_SPARSE_DATA \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_STANDARD_CONSTRUCTORS \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_PRIVATE_PROPERTY_OFFSET \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_SPARSE_DATA \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_GENERATED_BODY \
+#define Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_PRIVATE_PROPERTY_OFFSET \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_SPARSE_DATA \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS_NO_PURE_DECLS \
-	PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_ENHANCED_CONSTRUCTORS \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_PRIVATE_PROPERTY_OFFSET \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_SPARSE_DATA \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_INCLASS_NO_PURE_DECLS \
+	Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h_28_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class MathBPLibrary."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -99,7 +99,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> MATH_API UClass* StaticClass<class UMathBPLibrary>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID PluginsCreator_Plugins_Math_Source_Math_Public_MathBPLibrary_h
+#define CURRENT_FILE_ID Stole_DaVInchy_Plugins_Math_Source_Math_Public_MathBPLibrary_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
