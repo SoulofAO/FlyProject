@@ -32,6 +32,34 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Developer/TraceSourceFiltering/Binaries/Win64/UE4Editor-SourceFilteringTrace.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Developer/TraceSourceFiltering/Binaries/Win64/UE4Editor-SourceFilteringCore.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Developer/TraceSourceFiltering/Binaries/Win64/UE4Editor-SourceFilteringEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Animation/GameplayInsights/Binaries/Win64/UE4Editor-GameplayInsights.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Animation/GameplayInsights/Binaries/Win64/UE4Editor-GameplayInsightsEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Runtime/NetworkPredictionInsights/Binaries/Win64/UE4Editor-NetworkPredictionInsights.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Slate/SlateInsights/Binaries/Win64/UE4Editor-SlateInsights.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/Binaries/Win64/UE4Editor-AI_Helper_plugin.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -45,6 +73,14 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor-GetMeshVertex.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Math/Binaries/Win64/UE4Editor-Math.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Math/Binaries/Win64/UE4Editor-Math.pdb",
 			"Type": "SymbolFile"
 		},
 		{
@@ -2436,11 +2472,31 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Developer/TraceSourceFiltering/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Animation/GameplayInsights/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Runtime/NetworkPredictionInsights/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Slate/SlateInsights/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Math/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2966,6 +3022,22 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Developer/TraceSourceFiltering/TraceSourceFilters.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Animation/GameplayInsights/GameplayInsights.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Runtime/NetworkPredictionInsights/NetworkPredictionInsights.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Slate/SlateInsights/SlateInsights.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/AI_Helper_plugin/AI_Helper_plugin.uplugin",
 			"Type": "UFS"
 		},
@@ -2975,6 +3047,14 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/GetMeshVertex.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Math/Math.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/My_Code_Collection/My_Code_Collection.uplugin",
 			"Type": "UFS"
 		},
 		{
