@@ -27,6 +27,7 @@ class UGetMeshVertexBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
+
 		UFUNCTION(BlueprintCallable, meta = (DisplayName = "GetMeshVertex", Keywords = "GetMeshVertex"), Category = "GetMeshVertexTesting")
 		static FVector GetVertexLocaltion(int Count, UStaticMeshComponent* StaticMeshComponent);
 	    UFUNCTION(BlueprintCallable, meta = (DisplayName = "GetMeshVertexCount", Keywords = "GetMeshVertexCount"), Category = "GetMeshVertexTesting")
