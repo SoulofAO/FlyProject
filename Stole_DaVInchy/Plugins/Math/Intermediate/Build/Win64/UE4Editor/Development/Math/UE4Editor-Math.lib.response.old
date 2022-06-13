@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Math.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\PluginsCreator\Intermediate\Build\Win64\PluginsCreatorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\PluginsCreator\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Module.Math.cpp.obj"
+"F:\PluginsCreator\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Module.Math.gen.cpp.obj"
+"F:\PluginsCreator\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Default.rc2.res"
+/OUT:"F:\PluginsCreator\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\UE4Editor-Math.lib"
