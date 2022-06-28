@@ -68,6 +68,14 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Dialog_System/Binaries/Win64/UE4Editor-Dialog_System.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Dialog_System/Binaries/Win64/UE4Editor-Dialog_System.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor-GetMeshVertex.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2492,6 +2500,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Dialog_System/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/GetMeshVertex/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -3043,6 +3055,10 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/Battle_Manager/Battle_Manager.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Dialog_System/Dialog_System.uplugin",
 			"Type": "UFS"
 		},
 		{
