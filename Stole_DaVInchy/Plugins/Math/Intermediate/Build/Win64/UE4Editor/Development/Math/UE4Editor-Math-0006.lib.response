@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Math-0006.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Intermediate\Build\Win64\Stole_DaVInchyEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Module.Math.cpp.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Module.Math.gen.cpp.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\Default.rc2.res"
+/OUT:"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\Math\Intermediate\Build\Win64\UE4Editor\Development\Math\UE4Editor-Math-0006.lib"
