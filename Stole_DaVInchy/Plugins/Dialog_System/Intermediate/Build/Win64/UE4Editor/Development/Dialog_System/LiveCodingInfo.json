@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Dialog_System.cpp.obj": [
+			"Apply_Dialog_Animation.cpp.obj",
+			"Apply_Dialog_Object_Main.cpp.obj",
+			"Apply_Dialog_Open_Level.cpp.obj",
+			"Dialog_System.cpp.obj"
+		],
+		"Module.Dialog_System.gen.cpp.obj": [
+			"Apply_Dialog_Animation.gen.cpp.obj",
+			"Apply_Dialog_Object_Main.gen.cpp.obj",
+			"Apply_Dialog_Open_Level.gen.cpp.obj",
+			"Dialog_System.init.gen.cpp.obj"
+		]
+	}
+}
