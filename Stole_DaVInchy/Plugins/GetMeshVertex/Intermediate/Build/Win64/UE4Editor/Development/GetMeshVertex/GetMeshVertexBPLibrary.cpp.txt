@@ -1,4 +1,0 @@
-F:\FlyProject_2\Plugins\GetMeshVertex\Intermediate\Build\Win64\UE4Editor\Development\GetMeshVertex\Definitions.GetMeshVertex.h
-F:\FlyProject_2\Plugins\GetMeshVertex\Source\GetMeshVertex\Public\GetMeshVertexBPLibrary.h
-F:\FlyProject_2\Plugins\GetMeshVertex\Intermediate\Build\Win64\UE4Editor\Inc\GetMeshVertex\GetMeshVertexBPLibrary.generated.h
-F:\FlyProject_2\Plugins\GetMeshVertex\Source\GetMeshVertex\Public\GetMeshVertex.h

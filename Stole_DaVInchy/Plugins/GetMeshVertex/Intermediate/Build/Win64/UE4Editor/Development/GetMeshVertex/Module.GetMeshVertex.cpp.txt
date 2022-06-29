@@ -1,6 +1,0 @@
-F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\GetMeshVertex\Intermediate\Build\Win64\UE4Editor\Development\GetMeshVertex\Definitions.GetMeshVertex.h
-F:/MainProject/FlyProject_End/Stole_DaVInchy/Plugins/GetMeshVertex/Source/GetMeshVertex/Private/GetMeshVertex.cpp
-F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\GetMeshVertex\Source\GetMeshVertex\Public\GetMeshVertex.h
-F:/MainProject/FlyProject_End/Stole_DaVInchy/Plugins/GetMeshVertex/Source/GetMeshVertex/Private/GetMeshVertexBPLibrary.cpp
-F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\GetMeshVertex\Source\GetMeshVertex\Public\GetMeshVertexBPLibrary.h
-F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\GetMeshVertex\Intermediate\Build\Win64\UE4Editor\Inc\GetMeshVertex\GetMeshVertexBPLibrary.generated.h
