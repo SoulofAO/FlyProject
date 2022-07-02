@@ -16,7 +16,4 @@ class DIALOG_SYSTEM_API UApply_Dialog_Open_Level : public UApply_Dialog_Object_M
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly);
 	FName Name;
-
-
-	
 };
