@@ -35,10 +35,6 @@
 		{
 			"Name": "GameplayInsights",
 			"Enabled": true
-		},
-		{
-			"Name": "ControlRig",
-			"Enabled": true
 		}
 	]
 }
