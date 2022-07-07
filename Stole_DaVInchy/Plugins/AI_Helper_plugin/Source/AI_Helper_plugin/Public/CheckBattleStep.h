@@ -7,12 +7,25 @@
 #include "CheckBattleStep.generated.h"
 
 
+
+UENUM(BlueprintType)
+enum class Bool_Operation_Apply : uint8
+{
+	OR UMETA(DisplayName = OR),
+	AND UMETA(DisplayName = AND)
+};
+
+
+
 USTRUCT(BlueprintType)
 struct FStructCheckBattleStep
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere, Instanced, BlueprintReadWrite)
-	TArray<UCheckBattleStep*> CheckBattleStep;
+	UCheckBattleStep* CheckBattleStep;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		Bool_Operation_Apply Bool_Operation;
+
 };
 
 UCLASS(Abstract, EditInlineNew, Blueprintable, meta = (ShowWorldContextPin))

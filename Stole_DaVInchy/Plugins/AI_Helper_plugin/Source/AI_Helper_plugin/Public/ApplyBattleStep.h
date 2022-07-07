@@ -12,7 +12,8 @@ struct FStructBattleStep
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere, Instanced, BlueprintReadWrite)
-	TArray<UApplyBattleStep*> ApplyBattleStep;
+	UApplyBattleStep* ApplyBattleStep;
+
 };
 
 
