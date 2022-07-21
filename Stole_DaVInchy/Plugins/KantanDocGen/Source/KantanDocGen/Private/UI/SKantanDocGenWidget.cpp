@@ -4,7 +4,7 @@
 
 // Copyright (C) 2016-2017 Cameron Angus. All Rights Reserved.
 
-#include "UI/SKantanDocGenWidget.h"
+#include "SKantanDocGenWidget.h"
 #include "DocGenSettings.h"
 #include "DocGenSettings.h"
 #include "KantanDocGenModule.h"

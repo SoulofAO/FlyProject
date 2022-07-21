@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeKantanDocGen_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0x89A082D8,
+				0xF1C420C1,
 				0xACFA7E77,
 				METADATA_PARAMS(nullptr, 0)
 			};

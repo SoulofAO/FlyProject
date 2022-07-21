@@ -3,11 +3,11 @@
 	{
 		"Module.KantanDocGen.cpp.obj": [
 			"DocGenTaskProcessor.cpp.obj",
-			"ContentPathEnumerator.cpp.obj",
-			"NativeModuleEnumerator.cpp.obj",
 			"KantanDocGenCommands.cpp.obj",
 			"KantanDocGenModule.cpp.obj",
 			"NodeDocsGenerator.cpp.obj",
+			"ContentPathEnumerator.cpp.obj",
+			"NativeModuleEnumerator.cpp.obj",
 			"SKantanDocGenWidget.cpp.obj"
 		],
 		"Module.KantanDocGen.gen.cpp.obj": [

@@ -10,11 +10,9 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "mailto:kantandev@gmail.com",
-	"CanContainContent": true,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
-	"EngineVersion": "4.27.0",
-	"Installed": false,
+	"EngineVersion": "4.25.0",
+	"CanContainContent": false,
+	"Installed": true,
 	"Modules": [
 		{
 			"Name": "KantanDocGen",

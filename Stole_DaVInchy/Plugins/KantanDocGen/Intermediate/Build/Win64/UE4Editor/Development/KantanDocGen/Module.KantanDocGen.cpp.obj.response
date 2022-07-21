@@ -35,7 +35,6 @@
 /I F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Source\KantanDocGen\Private
 /I F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Intermediate\Build\Win64\UE4Editor\Inc\KantanDocGen
 /I F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Source
-/I F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Source\KantanDocGen\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public

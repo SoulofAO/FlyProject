@@ -4,7 +4,7 @@
 
 // Copyright (C) 2016-2017 Cameron Angus. All Rights Reserved.
 
-#include "Enumeration/NativeModuleEnumerator.h"
+#include "NativeModuleEnumerator.h"
 #include "KantanDocGenLog.h"
 #include "UObject/UnrealType.h"
 #include "UObject/Package.h"

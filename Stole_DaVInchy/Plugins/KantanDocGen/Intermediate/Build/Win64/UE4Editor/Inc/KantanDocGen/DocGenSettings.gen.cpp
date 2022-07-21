@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "KantanDocGen/Public/DocGenSettings.h"
+#include "KantanDocGen/Private/DocGenSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -92,7 +92,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewStructOps()
@@ -102,7 +102,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_DocumentationTitle_MetaData[] = {
 		{ "Category", "Documentation" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_DocumentationTitle = { "DocumentationTitle", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FKantanDocGenSettings, DocumentationTitle), METADATA_PARAMS(Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_DocumentationTitle_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_DocumentationTitle_MetaData)) };
@@ -110,7 +110,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_NativeModules_MetaData[] = {
 		{ "Category", "Class Search" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 		{ "Tooltip", "Raw module names (Do not prefix with '/Script')." },
 	};
 #endif
@@ -121,7 +121,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 		{ "Category", "Class Search" },
 		{ "Comment", "/** List of paths in which to search for blueprints to document. *///, Meta = (Tooltip = \"Path to content subfolder, e.g. '/Game/MyFolder' or '/PluginName/MyFolder'.\"))\n//TArray< FName > ContentPaths;\n" },
 		{ "ContentDir", "" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 		{ "ToolTip", "List of paths in which to search for blueprints to document. //, Meta = (Tooltip = \"Path to content subfolder, e.g. '/Game/MyFolder' or '/PluginName/MyFolder'.\"))\n//TArray< FName > ContentPaths;" },
 	};
 #endif
@@ -130,7 +130,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_SpecificClasses_MetaData[] = {
 		{ "Comment", "/** Names of specific classes/blueprints to document. *///EditAnywhere, Category = \"Class Search\")\n" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 		{ "ToolTip", "Names of specific classes/blueprints to document. //EditAnywhere, Category = \"Class Search\")" },
 	};
 #endif
@@ -139,7 +139,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_ExcludedClasses_MetaData[] = {
 		{ "Comment", "/** Names of specific classes/blueprints to exclude. *///EditAnywhere, Category = \"Class Search\")\n" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 		{ "ToolTip", "Names of specific classes/blueprints to exclude. //EditAnywhere, Category = \"Class Search\")" },
 	};
 #endif
@@ -147,21 +147,21 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_OutputDirectory_MetaData[] = {
 		{ "Category", "Output" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_OutputDirectory = { "OutputDirectory", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FKantanDocGenSettings, OutputDirectory), Z_Construct_UScriptStruct_FDirectoryPath, METADATA_PARAMS(Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_OutputDirectory_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_OutputDirectory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_BlueprintContextClass_MetaData[] = {
 		{ "Category", "Class Search" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_BlueprintContextClass = { "BlueprintContextClass", nullptr, (EPropertyFlags)0x0014040000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FKantanDocGenSettings, BlueprintContextClass), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_BlueprintContextClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_BlueprintContextClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_bCleanOutputDirectory_MetaData[] = {
 		{ "Category", "Output" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FKantanDocGenSettings_Statics::NewProp_bCleanOutputDirectory_SetBit(void* Obj)
@@ -211,7 +211,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FKantanDocGenSettings_Hash() { return 3802397914U; }
+	uint32 Get_Z_Construct_UScriptStruct_FKantanDocGenSettings_Hash() { return 2584576436U; }
 	void UKantanDocGenSettingsObject::StaticRegisterNativesUKantanDocGenSettingsObject()
 	{
 	}
@@ -240,13 +240,13 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UKantanDocGenSettingsObject_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "DocGenSettings.h" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UKantanDocGenSettingsObject_Statics::NewProp_Settings_MetaData[] = {
 		{ "Category", "Kantan DocGen" },
-		{ "ModuleRelativePath", "Public/DocGenSettings.h" },
+		{ "ModuleRelativePath", "Private/DocGenSettings.h" },
 		{ "ShowOnlyInnerProperties", "" },
 	};
 #endif
@@ -281,7 +281,7 @@ static struct FScriptStruct_KantanDocGen_StaticRegisterNativesFKantanDocGenSetti
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UKantanDocGenSettingsObject, 626546593);
+	IMPLEMENT_CLASS(UKantanDocGenSettingsObject, 837132815);
 	template<> KANTANDOCGEN_API UClass* StaticClass<UKantanDocGenSettingsObject>()
 	{
 		return UKantanDocGenSettingsObject::StaticClass();

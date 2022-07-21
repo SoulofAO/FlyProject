@@ -4,7 +4,7 @@
 
 // Copyright (C) 2016-2017 Cameron Angus. All Rights Reserved.
 
-#include "Enumeration/ContentPathEnumerator.h"
+#include "ContentPathEnumerator.h"
 #include "KantanDocGenLog.h"
 #include "AssetRegistryModule.h"
 #include "ARFilter.h"
