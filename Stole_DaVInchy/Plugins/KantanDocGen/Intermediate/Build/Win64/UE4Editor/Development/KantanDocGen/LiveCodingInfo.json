@@ -1,0 +1,18 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.KantanDocGen.cpp.obj": [
+			"DocGenTaskProcessor.cpp.obj",
+			"ContentPathEnumerator.cpp.obj",
+			"NativeModuleEnumerator.cpp.obj",
+			"KantanDocGenCommands.cpp.obj",
+			"KantanDocGenModule.cpp.obj",
+			"NodeDocsGenerator.cpp.obj",
+			"SKantanDocGenWidget.cpp.obj"
+		],
+		"Module.KantanDocGen.gen.cpp.obj": [
+			"DocGenSettings.gen.cpp.obj",
+			"KantanDocGen.init.gen.cpp.obj"
+		]
+	}
+}
