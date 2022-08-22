@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.My_Save_Plugin.cpp.obj": [
+			"My_Save_Plugin.cpp.obj",
+			"My_Save_PluginBPLibrary.cpp.obj"
+		],
+		"Module.My_Save_Plugin.gen.cpp.obj": [
+			"My_Save_Plugin.init.gen.cpp.obj",
+			"My_Save_PluginBPLibrary.gen.cpp.obj"
+		]
+	}
+}
