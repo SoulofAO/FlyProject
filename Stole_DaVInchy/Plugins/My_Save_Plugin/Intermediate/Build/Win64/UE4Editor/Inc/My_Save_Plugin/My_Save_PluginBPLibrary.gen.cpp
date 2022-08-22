@@ -16,8 +16,10 @@ void EmptyLinkFunctionForGeneratedCodeMy_Save_PluginBPLibrary() {}
 	MY_SAVE_PLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FSaveActor();
 	UPackage* Z_Construct_UPackage__Script_My_Save_Plugin();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTransform();
 	MY_SAVE_PLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FSaveActorComponent();
+	ENGINE_API UClass* Z_Construct_UClass_UActorComponent_NoRegister();
 	MY_SAVE_PLUGIN_API UClass* Z_Construct_UClass_UMy_Save_PluginBPLibrary_NoRegister();
 	MY_SAVE_PLUGIN_API UClass* Z_Construct_UClass_UMy_Save_PluginBPLibrary();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
@@ -56,6 +58,10 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActor
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ActorClass;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Transform_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Transform;
@@ -90,6 +96,13 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActor
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActor, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_Actor_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_Actor_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorClass_MetaData[] = {
+		{ "Category", "SaveActor" },
+		{ "ModuleRelativePath", "Public/My_Save_PluginBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorClass = { "ActorClass", nullptr, (EPropertyFlags)0x0014000000000004, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActor, ActorClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorClass_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_Transform_MetaData[] = {
 		{ "Category", "SaveActor" },
 		{ "ModuleRelativePath", "Public/My_Save_PluginBPLibrary.h" },
@@ -104,16 +117,17 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActor
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_SerializationData = { "SerializationData", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActor, SerializationData), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_SerializationData_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_SerializationData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_Inner = { "ActorComponents", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSaveActorComponent, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_Inner = { "ActorComponents", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSaveActorComponent, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_MetaData[] = {
 		{ "Category", "SaveActor" },
 		{ "ModuleRelativePath", "Public/My_Save_PluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents = { "ActorComponents", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActor, ActorComponents), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents = { "ActorComponents", nullptr, (EPropertyFlags)0x0010008000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActor, ActorComponents), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorComponents_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSaveActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_Actor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_ActorClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_Transform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_SerializationData_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActor_Statics::NewProp_SerializationData,
@@ -130,7 +144,7 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActor
 		Z_Construct_UScriptStruct_FSaveActor_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000005),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActor_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActor_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSaveActor()
@@ -148,7 +162,7 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActor
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSaveActor_Hash() { return 783498913U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSaveActor_Hash() { return 1151657497U; }
 class UScriptStruct* FSaveActorComponent::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -178,13 +192,13 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActorCompon
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Class_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Class;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ActorComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorComponentClass_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FNamePropertyParams NewProp_Name;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ActorComponentClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Transform_MetaData[];
 #endif
@@ -208,19 +222,20 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActorCompon
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSaveActorComponent>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Class_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponent_MetaData[] = {
 		{ "Category", "SaveActorComponent" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/My_Save_PluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Class = { "Class", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActorComponent, Class), METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Class_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Class_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponent = { "ActorComponent", nullptr, (EPropertyFlags)0x001000000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActorComponent, ActorComponent), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Name_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponentClass_MetaData[] = {
 		{ "Category", "SaveActorComponent" },
 		{ "ModuleRelativePath", "Public/My_Save_PluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActorComponent, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Name_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponentClass = { "ActorComponentClass", nullptr, (EPropertyFlags)0x0014000000000004, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActorComponent, ActorComponentClass), Z_Construct_UClass_UActorComponent_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponentClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponentClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Transform_MetaData[] = {
 		{ "Category", "SaveActorComponent" },
@@ -237,8 +252,8 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActorCompon
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_SerializationData = { "SerializationData", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSaveActorComponent, SerializationData), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_SerializationData_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_SerializationData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSaveActorComponent_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Class,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Name,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_ActorComponentClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_Transform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_SerializationData_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSaveActorComponent_Statics::NewProp_SerializationData,
@@ -253,7 +268,7 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActorCompon
 		Z_Construct_UScriptStruct_FSaveActorComponent_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000005),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveActorComponent_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSaveActorComponent()
@@ -271,7 +286,7 @@ static struct FScriptStruct_My_Save_Plugin_StaticRegisterNativesFSaveActorCompon
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSaveActorComponent_Hash() { return 1316057239U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSaveActorComponent_Hash() { return 1355402718U; }
 	DEFINE_FUNCTION(UMy_Save_PluginBPLibrary::execFL_SERIALIZE__DeSerialize)
 	{
 		P_GET_OBJECT(UObject,Z_Param_object_reference);

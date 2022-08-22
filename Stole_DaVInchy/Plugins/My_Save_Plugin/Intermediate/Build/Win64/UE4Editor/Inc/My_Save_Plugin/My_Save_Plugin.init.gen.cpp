@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeMy_Save_Plugin_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x2B46B3E8,
+				0x08C20049,
 				0x269FED7B,
 				METADATA_PARAMS(nullptr, 0)
 			};

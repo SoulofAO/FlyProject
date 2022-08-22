@@ -49,8 +49,8 @@
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
 #define UE_IS_ENGINE_MODULE 0
-#define UE_PROJECT_NAME PluginWorld
-#define UE_TARGET_NAME PluginWorldEditor
+#define UE_PROJECT_NAME Stole_DaVInchy
+#define UE_TARGET_NAME Stole_DaVInchyEditor
 #define UE_MODULE_NAME "My_Save_Plugin"
 #define UE_PLUGIN_NAME "My_Save_Plugin"
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

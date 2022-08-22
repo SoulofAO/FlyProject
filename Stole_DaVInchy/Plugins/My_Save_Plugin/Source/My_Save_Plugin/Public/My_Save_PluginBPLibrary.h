@@ -50,11 +50,12 @@ USTRUCT(BlueprintType)
 struct FSaveActorComponent
 {
     GENERATED_BODY()
-    UPROPERTY(BlueprintReadWrite)
-    FString Class;
 
     UPROPERTY(BlueprintReadWrite)
-    FName Name;
+    UActorComponent* ActorComponent;
+
+    UPROPERTY(BlueprintReadWrite)
+    TSubclassOf<UActorComponent> ActorComponentClass;
 
     UPROPERTY(BlueprintReadWrite)
     FTransform Transform;
@@ -70,6 +71,9 @@ struct FSaveActor
 
     UPROPERTY(BlueprintReadWrite)
     AActor* Actor;
+
+    UPROPERTY(BlueprintReadWrite)
+    TSubclassOf<AActor> ActorClass;
 
     UPROPERTY(BlueprintReadWrite)
         FTransform Transform;
