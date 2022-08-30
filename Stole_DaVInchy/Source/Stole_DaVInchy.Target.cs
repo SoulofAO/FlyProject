@@ -8,6 +8,7 @@ public class Stole_DaVInchyTarget : TargetRules
 	public Stole_DaVInchyTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
+		//bUseUnityBuild = false; 
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 
 		ExtraModuleNames.AddRange( new string[] { "Stole_DaVInchy" } );

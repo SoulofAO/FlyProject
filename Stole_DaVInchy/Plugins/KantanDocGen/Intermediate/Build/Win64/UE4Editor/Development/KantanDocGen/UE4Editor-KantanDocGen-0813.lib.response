@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-KantanDocGen-0813.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Intermediate\Build\Win64\Stole_DaVInchyEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Intermediate\Build\Win64\UE4Editor\Development\KantanDocGen\Module.KantanDocGen.cpp.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Intermediate\Build\Win64\UE4Editor\Development\KantanDocGen\Module.KantanDocGen.gen.cpp.obj"
+"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Intermediate\Build\Win64\UE4Editor\Development\KantanDocGen\Default.rc2.res"
+/OUT:"F:\MainProject\FlyProject_End\Stole_DaVInchy\Plugins\KantanDocGen\Intermediate\Build\Win64\UE4Editor\Development\KantanDocGen\UE4Editor-KantanDocGen-0813.lib"
