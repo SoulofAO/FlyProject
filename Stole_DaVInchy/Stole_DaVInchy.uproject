@@ -43,6 +43,10 @@
 		{
 			"Name": "ApexDestruction",
 			"Enabled": true
+		},
+		{
+			"Name": "KantanDocGen",
+			"Enabled": true
 		}
 	]
 }
