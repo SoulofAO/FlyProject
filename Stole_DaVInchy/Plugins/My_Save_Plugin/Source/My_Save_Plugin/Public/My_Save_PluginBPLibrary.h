@@ -34,18 +34,68 @@ public:
     }
 };
 
+USTRUCT(BlueprintType)
+struct FPropertyReference
+{
+    GENERATED_BODY()
+
+    UPROPERTY(BlueprintReadWrite)
+        FName VariableName;
+
+    UPROPERTY(BlueprintReadWrite)
+        FName ObjectName;
+
+    UPROPERTY(BlueprintReadWrite)
+        UObject* ObjectLink;
+
+    UPROPERTY(BlueprintReadWrite)
+        UObject* VariableLink;
+
+};
+
 UCLASS()
 class UMy_Save_PluginBPLibrary : public UBlueprintFunctionLibrary
 {
     GENERATED_BODY()
 public:
     UFUNCTION(BlueprintCallable, meta = (CallableWithoutWorldContext, ToolTip = "Forming an array of bytes of serialization", DisplayName = "Serialize", KeyWords = "Serialize"))
-        static void FL_SERIALIZE__Serialize(UPARAM(DisplayName = "Object") UObject* const object_reference, UPARAM(DisplayName = "Data") TArray<uint8>& serialization_data);
+    static void FL_SERIALIZE__Serialize(UPARAM(DisplayName = "Object") UObject* const object_reference, UPARAM(DisplayName = "Data") TArray<uint8>& serialization_data);
 
     UFUNCTION(BlueprintCallable, meta = (CallableWithoutWorldContext, ToolTip = "Restore from an array of bytes of serialization", DisplayName = "De Serialize", KeyWords = "Serialize"))
-        static void FL_SERIALIZE__DeSerialize(UPARAM(DisplayName = "Object") UObject* const object_reference, UPARAM(ref, DisplayName = "Data") TArray<uint8>& serialization_data);
+    static void FL_SERIALIZE__DeSerialize(UPARAM(DisplayName = "Object") UObject* const object_reference, UPARAM(ref, DisplayName = "Data") TArray<uint8>& serialization_data);
 
+    UFUNCTION(BlueprintCallable, meta = (DeterminesOutputType = ObjectClasss))
+    static TArray<UObject*> GetAllUObjectByObjectClass(TSubclassOf<UObject> ObjectClass);
+
+    UFUNCTION(BlueprintCallable)
+    static TArray<FPropertyReference> GetAllReferenceToUObject(UObject* Object);
+
+    UFUNCTION(BlueprintCallable)
+    static FName GetObjectNameLink(UObject* ObjectClass);
+
+    UFUNCTION(BlueprintCallable)
+    static void ParseObjectLink(FName ObjectNameLink, FString& ActorName, FString ComponentName, FString& ObjectName);
+
+    UFUNCTION(BlueprintCallable)
+    static TArray<UObject*> GetAllReferencese(UObject* Object);
 };
+
+
+
+
+
+USTRUCT(BlueprintType)
+struct FSaveUObject
+{
+    GENERATED_BODY()
+
+    UPROPERTY(BlueprintReadWrite)
+    UObject* Object;
+
+    UPROPERTY(BlueprintReadWrite)
+    FName ObjectName;
+};
+
 USTRUCT(BlueprintType)
 struct FSaveActorComponent
 {
@@ -53,6 +103,9 @@ struct FSaveActorComponent
 
     UPROPERTY(BlueprintReadWrite)
     UActorComponent* ActorComponent;
+
+    UPROPERTY(BlueprintReadWrite)
+    FName ObjectName;
 
     UPROPERTY(BlueprintReadWrite)
     TSubclassOf<UActorComponent> ActorComponentClass;
@@ -71,6 +124,9 @@ struct FSaveActor
 
     UPROPERTY(BlueprintReadWrite)
     AActor* Actor;
+
+    UPROPERTY(BlueprintReadWrite)
+    FName ObjectName;
 
     UPROPERTY(BlueprintReadWrite)
     TSubclassOf<AActor> ActorClass;
